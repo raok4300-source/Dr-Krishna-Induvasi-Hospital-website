@@ -1,0 +1,504 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#00504c","on-primary":"#ffffff","inverse-on-surface":"#eef1f3","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb59d","secondary-container":"#fd9d7f","surface-container-highest":"#e0e3e5","on-error-container":"#93000a","surface-container-low":"#f1f4f6","surface-container-high":"#e5e9eb","on-tertiary-container":"#77c8c1","tertiary-fixed":"#9ff1ea","outline-variant":"#c2c7d1","primary-fixed":"#d2e4ff","on-background":"#181c1e","surface-bright":"#f7fafc","surface-container-lowest":"#ffffff","secondary-fixed":"#ffdbd0","surface-tint":"#2d6197","background":"#f7fafc","on-primary-fixed-variant":"#07497d","on-primary-fixed":"#001c37","tertiary-fixed-dim":"#84d5cd","tertiary-container":"#00544f","surface-variant":"#e0e3e5","outline":"#727780","error":"#ba1a1a","secondary":"#944930","on-secondary-fixed":"#390b00","error-container":"#ffdad6","on-surface-variant":"#42474f","primary-container":"#0f4c81","on-surface":"#181c1e","primary-fixed-dim":"#a0c9ff","inverse-primary":"#a0c9ff","on-primary-container":"#8ebdf9","tertiary":"#003b38","on-tertiary-fixed":"#00201e","on-secondary-container":"#77331c","on-secondary":"#ffffff","on-error":"#ffffff","surface":"#f7fafc","surface-container":"#ebeef0","surface-dim":"#d7dadc","inverse-surface":"#2d3133","on-secondary-fixed-variant":"#76321b","primary":"#00355f"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"clamp(16px, 5vw, 64px)","xl":"80px","sm":"12px","md":"24px","gutter":"24px","lg":"48px","xs":"4px","base":"8px"},"fontFamily":{"headline-xl-mobile":["Manrope"],"body-lg":["Manrope"],"headline-lg":["Manrope"],"label-md":["Manrope"],"body-md":["Manrope"],"headline-md":["Manrope"],"headline-xl":["Manrope"]},"fontSize":{"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,76,129,0.06)]"><div class="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-base"><img alt="Hospital logo for 'Dr Krishna Induvasi Paediatric Surgery and Urology Hospital'. Professional medical emblem with a friendly, paediatric touch. Clinical blue and soft teal accents.. Design context: - Primary color: #0f4c81 - Font: manrope - Mode: light - Roundness: rounded-md" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WdSD2X4I_WAjeynnLD7lWa7Jrqt99L6JH3zHnoutmJf-lsJDb3yKNxONFBInWdGZcCk_lPF2tywj07_dfezEvrdsxVihLYFshclG0lyCBh8IHZ_M4WMYrWlVYIjAgFDjoXdrr_Q9ZuXXdcY8JzjSACJ-7sw3sB0y5kXg9jY61fML9UyOztmRrKk742mePazDVIaB1Y6PL0bVBMM31jTgifheNq3-3rqQXd2Edbh21e9sTEbyHlHjBnng8q"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary leading-none">Dr Krishna Induvasi</span><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Paediatric Surgery & Urology</span></div></div><nav class="hidden lg:flex items-center gap-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="doctors" href="#">Doctors</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="services" href="#">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-md"><button data-open-booking class="hidden sm:flex bg-secondary text-on-secondary px-md py-sm rounded-lg font-label-md text-label-md hover:bg-on-secondary-container transition-all">Book Appointment</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest -mt-20 pt-32 pb-xl lg:pb-32 px-margin">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none overflow-hidden">
+<svg class="absolute -top-1/4 -right-1/4 w-[150%] h-[150%] fill-primary animate-pulse" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,97.3,-2.3C97.8,13.4,92.8,29.3,83.1,42.5C73.4,55.7,59,66.1,43.3,73.5C27.6,80.9,10.6,85.3,-5.7,85.6C-22,85.9,-37.6,82,-51.9,74.3C-66.2,66.6,-79.2,55.1,-86.7,40.6C-94.2,26.1,-96.2,8.6,-93.4,-8.1C-90.6,-24.8,-83,-40.7,-71.5,-53C-60,-65.3,-44.6,-74,-29.3,-79.5C-14,-85,1.2,-87.3,16.4,-85.2C31.6,-83.1,46.8,-76.6,58.8,-69.2" transform="translate(100 100)"></path>
+</svg>
+</div>
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-xl items-center relative z-10">
+<div class="flex flex-col gap-lg">
+<div class="flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest flex items-center gap-2">
+<span class="w-8 h-[2px] bg-primary block"></span>
+                Compassionate Care
+            </span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface text-balance">
+                Precision Paediatric Surgery & Expert Urology.
+            </h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[500px]">
+          Dedicated to providing the highest standard of surgical care for children and comprehensive urological treatments for all ages. Your health is our priority.
+        </p>
+<div class="flex flex-wrap items-center gap-md">
+<button data-open-booking class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-lg py-4 rounded-full transition-transform hover:scale-105 shadow-[0_8px_24px_rgba(0,53,95,0.2)]">
+            Book Appointment
+          </button>
+<button class="bg-surface-container-low hover:bg-surface-container-highest text-primary font-label-md text-label-md px-lg py-4 rounded-full transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">emergency</span>
+            Emergency Contact
+          </button>
+</div>
+<div class="flex items-center gap-md pt-md">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-lowest bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A smiling child patient in a clean, brightly lit hospital room, wearing a colorful hospital gown, feeling better and confident. Soft, optimistic lighting, medical blue and warm coral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDknseDDOLg2EpbrVcUFq76SSl2X_Zfpjr0OvnjJZkUiz4oqNC-XjBUkcn3pqDW2LFV6exT3XuUksvn-ClQj-HSiEXTxYWBcuBaY4CIVlRh7YxSnF-Mrck8Ai-IKO6Hpw91bJFJod6WPGlh6fQ0EeWG2XKY6CSofEbODsNRbP2OubjMhY2_dtcuZSXE1aXZM5yzTtr4fx0OWCIqxn-vMN8OMI-9dvDJug3dqJevSv7-lcSM9DnCZux21w"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-lowest bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close up of a professional doctor's hands gently holding a small child's hand, conveying trust and care. Bright, sterile but warm environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWps73J7YK4uh9ogrkc9zqPQWK5cpL_aIzCSSTtVcrVsggDncwSjYGXiDgf3Ned8PrWhSrPcx93WvM3N7fvEm_xMw8Cu-yUMVhf5h3qVjfwN-JMcjX9YhLGqt89xRDY5W70ShTFouidPpvtUcehMFTUmY1sz_3pzEh9WSbVU7G3bcVChCsiQtIZiHSEdcGKM3no1KCc6y5cjEtHRIlmZaNSneFIZlTBFTdatyoJR0XcB0lV7xZhHrPAA"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-lowest bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-label-md text-label-md">
+                    +5k
+                </div>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">Happy Patients Treated</span>
+</div>
+</div>
+<div class="relative h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A modern, high-tech pediatric surgery room with state-of-the-art medical equipment, bathed in clean, bright light. The atmosphere is professional yet reassuring, emphasizing precision and care." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7AN8kHsljebxi1ya-pyonTFJn07Vk9vz4s6zMeIglg7jWRu8nXJSWh6NYgEQ8q213PEHVSYL1gqYhAjxZWYYeLv_u9C9wFR03yYEykXwGlmZuO8T2OJZj2Ldra4QwdXs3cJsAa9rGdsHPNFu0-lw0GfJGbBfBAiBx7c88-YQSXaBJgaWDmr2nQS-4ciPp1eOjADNF0xyzjYs5FljPPI0OtU97ER0NpvV1Evzk12WDKkDUtOE7EXksng')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full flex justify-between items-end">
+<div class="bg-surface/90 backdrop-blur-md p-md rounded-2xl flex items-center gap-md shadow-lg transform translate-y-4 hover:translate-y-0 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface leading-tight">ISO 9001</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Certified Facility</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Expertise -->
+<section class="w-full bg-surface py-xl px-margin">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-lg">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Our Core Expertise</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Specialized medical care tailored for children and comprehensive urological health for everyone.</p>
+</div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-xs hover:gap-sm transition-all">
+                View All Services <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md lg:gap-lg">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-lg shadow-sm hover:shadow-xl transition-shadow relative overflow-hidden h-full flex flex-col">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-125"></div>
+<div class="w-16 h-16 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center mb-lg relative z-10">
+<span class="material-symbols-outlined text-[32px]">child_care</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md relative z-10">Paediatric Surgery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow relative z-10 mb-lg">Expert surgical interventions for infants, children, and adolescents, ensuring minimal trauma and rapid recovery.</p>
+<div class="flex flex-wrap gap-sm relative z-10">
+<span class="bg-surface-container px-sm py-xs rounded-md font-label-md text-xs text-on-surface-variant">Laparoscopy</span>
+<span class="bg-surface-container px-sm py-xs rounded-md font-label-md text-xs text-on-surface-variant">Neonatal</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-lg shadow-sm hover:shadow-xl transition-shadow relative overflow-hidden h-full flex flex-col">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-125"></div>
+<div class="w-16 h-16 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-lg relative z-10">
+<span class="material-symbols-outlined text-[32px]">water_drop</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md relative z-10">Urology Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow relative z-10 mb-lg">Comprehensive care for urinary tract conditions, including specialized treatments for female urology and continence issues.</p>
+<div class="flex flex-wrap gap-sm relative z-10">
+<span class="bg-surface-container px-sm py-xs rounded-md font-label-md text-xs text-on-surface-variant">Female Urology</span>
+<span class="bg-surface-container px-sm py-xs rounded-md font-label-md text-xs text-on-surface-variant">Urodynamics</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-lg shadow-sm hover:shadow-xl transition-shadow relative overflow-hidden h-full flex flex-col">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-125"></div>
+<div class="w-16 h-16 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-lg relative z-10">
+<span class="material-symbols-outlined text-[32px]">clinical_notes</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md relative z-10">Consultations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow relative z-10 mb-lg">Detailed diagnostic assessments and personalized treatment plans crafted by our experienced specialists.</p>
+<div class="flex flex-wrap gap-sm relative z-10">
+<span class="bg-surface-container px-sm py-xs rounded-md font-label-md text-xs text-on-surface-variant">Diagnostics</span>
+<span class="bg-surface-container px-sm py-xs rounded-md font-label-md text-xs text-on-surface-variant">Treatment Planning</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Doctors -->
+<section class="w-full bg-surface-container-low py-xl px-margin relative">
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="text-center mb-xl max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Meet Our Specialists</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Decades of combined experience dedicated to your health and recovery.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg lg:gap-xl">
+<!-- Doctor 1 -->
+<div class="bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col sm:flex-row group">
+<div class="sm:w-2/5 relative overflow-hidden">
+<img class="w-full h-full object-cover min-h-[300px] transform group-hover:scale-105 transition-transform duration-700" data-alt="Dr. Krishna Induvasi Headshot" src="https://lh3.googleusercontent.com/aida/AEtjO1V0MCrF_-hN7o_HbiCSVlW_O-Keus2ZvUCE6qqS3ZqtDpUuUxV6XN78uJpGOiFNUFU54TbH1frSQsG9lvXOWYJYmwoyegGvCrq8lsDmafJSlPFydGxB934or02UvUdK1qDzjpw_iSg7piM2kn3qhW7wmk9mgW__2PUp1ryc5dhYnS570iMdOZcL-kss_GSLq9SKZ-xW6LFRFEN9xTEsX4LdYJuU5Gr_5wCHR73oDpnqU4UO-9vaeOUXAwA"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="sm:w-3/5 p-lg flex flex-col justify-center">
+<span class="inline-block bg-primary-fixed text-on-primary-fixed font-label-md text-xs px-sm py-xs rounded-full mb-md self-start">Chief Surgeon</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Dr. Krishna Induvasi</h3>
+<p class="font-label-md text-label-md text-primary mb-md">Paediatric Surgery</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg line-clamp-3">Specializing in advanced paediatric surgical techniques, committed to minimal invasive procedures and rapid patient recovery.</p>
+<button data-open-booking data-doctor="Dr. Krishna Induvasi (Paediatric Surgery)" class="bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md px-md py-sm rounded-lg transition-colors self-start mt-auto flex items-center gap-2">
+                        Book Consultation
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Doctor 2 -->
+<div class="bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col sm:flex-row group">
+<div class="sm:w-2/5 relative overflow-hidden">
+<img class="w-full h-full object-cover min-h-[300px] transform group-hover:scale-105 transition-transform duration-700" data-alt="Dr. Roshnidevi Patil Headshot" src="https://lh3.googleusercontent.com/aida/AEtjO1UYvD_WkMWObr-JfI7m5ZW-a7bIV5jHchxlnGlLB6LFJ67yMzddt8j8nJn7479DFlA7qf1LsN8pXykCXU16g0NoJUDf8hrQqMX22Tx09lfmwgLf4s2LsxEs3THFKrWMXIQ-5x0GQcnMWuB4V4KHwB9hXQsv8_lhvcrJNLzj6vUWVaazEJu1YLDojl66qReK0E6FsT-3z06ZN4Z9YwXlIHV3nFaHdljzn6vHGPRK04tT1Ci8zgcxCeq7n2Vw"/>
+<div class="absolute inset-0 bg-tertiary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<div class="sm:w-3/5 p-lg flex flex-col justify-center">
+<span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-xs px-sm py-xs rounded-full mb-md self-start">Senior Consultant</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Dr. Roshnidevi Patil</h3>
+<p class="font-label-md text-label-md text-tertiary mb-md">Urology Services</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg line-clamp-3">Expert in comprehensive urological care, with specialized focus on female urology and advanced urodynamic assessments.</p>
+<button data-open-booking data-doctor="Dr. Roshnidevi Patil (Urology)" class="bg-surface-container text-on-surface hover:bg-tertiary hover:text-on-tertiary font-label-md text-label-md px-md py-sm rounded-lg transition-colors self-start mt-auto flex items-center gap-2">
+                        Book Consultation
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Services Grid -->
+<section class="w-full bg-surface py-xl px-margin">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col lg:flex-row gap-xl">
+<!-- Sticky Sidebar for Titles -->
+<div class="lg:w-1/3 flex flex-col">
+<div class="sticky top-32">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">Specialized<br/>Clinical Focus</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">We provide a wide array of specialized services utilizing state-of-the-art technology and evidence-based practices.</p>
+<div class="hidden lg:flex flex-col gap-sm">
+<div class="p-4 rounded-xl bg-surface-container-highest cursor-pointer border-l-4 border-primary">
+<h4 class="font-label-md text-label-md text-on-surface">Surgical Specialities</h4>
+</div>
+<div class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-highest cursor-pointer transition-colors border-l-4 border-transparent hover:border-outline">
+<h4 class="font-label-md text-label-md text-on-surface-variant">Urological Clinics</h4>
+</div>
+<div class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-highest cursor-pointer transition-colors border-l-4 border-transparent hover:border-outline">
+<h4 class="font-label-md text-label-md text-on-surface-variant">Diagnostics & Support</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Grid -->
+<div class="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-md">
+<!-- Bento Item 1 (Large) -->
+<div class="sm:col-span-2 bg-primary-container text-on-primary-container rounded-[2rem] p-xl relative overflow-hidden flex flex-col md:flex-row items-center gap-lg">
+<div class="absolute -right-20 -bottom-20 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[200px]">surgical</span>
+</div>
+<div class="flex-1 relative z-10">
+<h3 class="font-headline-md text-headline-md mb-sm">Paediatric Laparoscopy</h3>
+<p class="font-body-md text-body-md opacity-90 mb-md max-w-md">Minimally invasive surgical techniques allowing for smaller incisions, less pain, and faster return to normal activities for children.</p>
+<button class="font-label-md text-label-md flex items-center gap-2 hover:gap-4 transition-all">
+                            Learn more <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden shrink-0 shadow-lg relative z-10">
+<img class="w-full h-full object-cover" data-alt="Abstract representation of minimally invasive pediatric surgery using soft blue and teal glowing lines resembling microscopic tools in a clean environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKnsNFLgTfgIsJF0Vky9I9_CvnL5b8CjrxDFuPj3rr7M7AYaeH4ZFNW9Id34rVRFDJy3e51Uf2O8Jt2nmTQ78s6DzRilVlxhDThV1-SeE4v_T3yF4xPbZmoLFVcLpCvWOzjjZnP-Bdpbrs0GgBAr31h90XWDt0menJnAAnp5a1HFmfKHsUbvp9tH1UjAGl5v_-2ijSeRqnjSwnDNIcIKRjU4pRYdINLubjS4ivy5FkQuVpgFrrDvKvVA"/>
+</div>
+</div>
+<!-- Bento Item 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-[24px]">pregnant_woman</span>
+</div>
+<h4 class="font-headline-md text-[20px] leading-tight text-on-surface mb-sm">Neonatal Surgery</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Critical surgical interventions for newborns, performed with the utmost precision and care in specialized neonatal units.</p>
+</div>
+<!-- Bento Item 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-[24px]">woman</span>
+</div>
+<h4 class="font-headline-md text-[20px] leading-tight text-on-surface mb-sm">Female Urology</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Dedicated care focusing on the diagnosis and treatment of urological disorders specific to women, ensuring privacy and comfort.</p>
+</div>
+<!-- Bento Item 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+<h4 class="font-headline-md text-[20px] leading-tight text-on-surface mb-sm">Urodynamics</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Advanced diagnostic testing to assess how well the bladder, sphincters, and urethra are storing and releasing urine.</p>
+</div>
+<!-- Bento Item 5 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-[24px]">wc</span>
+</div>
+<h4 class="font-headline-md text-[20px] leading-tight text-on-surface mb-sm">Urinary Incontinence</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Specialized clinics offering comprehensive management and treatment plans for various types of urinary incontinence.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Contact Info -->
+<section class="w-full bg-surface-container-low py-xl px-margin border-t border-outline-variant/20">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-xl">
+<!-- Contact Details -->
+<div class="lg:col-span-1 flex flex-col gap-lg">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Contact Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Reach out for appointments, inquiries, or emergencies. We are here to help.</p>
+</div>
+<div class="flex flex-col gap-md">
+<div class="flex items-start gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Location</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Patil Nursing Home, Venkatesh Nagar,<br/>Kalaburagi, Karnataka</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Operating Hours</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Mon - Sat: 9:00 AM - 8:00 PM<br/>Emergency: 24/7</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Phone</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">+91 98765 43210</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">qr_code</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">UPI ID</h4>
+<p class="font-body-md text-body-md text-on-surface-variant font-mono mt-xs">9591493502@upi</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Area -->
+<div class="lg:col-span-2 relative h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-md">
+<div class="w-full h-full bg-surface-container-highest" data-location="Patil Nursing Home, Venkatesh Nagar, Kalaburagi" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUta9q6zir5Q-WyKcssoV11VEd9vRAhqf6pqkEB1hnd7vfGUjdlqyWcbFcfMsWht0j269BoLBx59A6fybj8C_psZ5h-R2HT0VNvhtf80ZxJnMI_2FOl8JH9qnpZPf1NLN1B3jA09wDwDCNH04BcEa5znwin0ZBGw6pNOUN_Pbme-F1SuUheM7c4pyX0rh6BkPd8RbnhTRh9QuG-YMR_cqCTnUBngqSrUk3O-wSINJfYGfy9dnSn__XQw')"></div>
+<!-- Floating Action Card on Map -->
+<div class="absolute bottom-6 left-6 right-6 md:right-auto md:w-[350px] bg-surface-container-lowest/95 backdrop-blur-md p-lg rounded-2xl shadow-xl">
+<h4 class="font-headline-md text-[20px] text-on-surface mb-sm">Need Directions?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md text-sm">Find the fastest route to our facility in Venkatesh Nagar.</p>
+<button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-sm rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+                    Get Directions
+                 </button>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-xl"><div class="max-w-[1280px] mx-auto px-margin py-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-lg mb-lg"><div class="col-span-1 md:col-span-2"><img alt="Logo" class="h-8 w-auto mb-md opacity-80" src="https://lh3.googleusercontent.com/aida/AEtjO1WdSD2X4I_WAjeynnLD7lWa7Jrqt99L6JH3zHnoutmJf-lsJDb3yKNxONFBInWdGZcCk_lPF2tywj07_dfezEvrdsxVihLYFshclG0lyCBh8IHZ_M4WMYrWlVYIjAgFDjoXdrr_Q9ZuXXdcY8JzjSACJ-7sw3sB0y5kXg9jY61fML9UyOztmRrKk742mePazDVIaB1Y6PL0bVBMM31jTgifheNq3-3rqQXd2Edbh21e9sTEbyHlHjBnng8q"/><p class="font-body-md text-on-surface-variant max-w-sm">Compassionate care for children, specializing in paediatric surgical and urological precision. Ensuring a healthier future for your little ones.</p></div><div><h4 class="font-headline-md text-label-md text-on-surface mb-md uppercase">Quick Links</h4><nav class="flex flex-col gap-sm"><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">About Us</a><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">Our Facilities</a><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">Patient Stories</a><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">FAQs</a></nav></div><div><h4 class="font-headline-md text-label-md text-on-surface mb-md uppercase">Support</h4><nav class="flex flex-col gap-sm"><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">Emergency Care</a><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-primary font-body-md" href="#">Contact Support</a></nav></div></div><div class="border-t border-outline-variant pt-md flex flex-col md:flex-row justify-between items-center gap-md text-on-surface-variant font-label-md"><p>© 2024 Dr Krishna Induvasi Hospital. All rights reserved.</p><div class="flex gap-md"><span class="material-symbols-outlined cursor-pointer hover:text-primary">qr_code_2</span><span class="material-symbols-outlined cursor-pointer hover:text-primary">medical_services</span><span class="material-symbols-outlined cursor-pointer hover:text-primary">call</span></div></div></div></footer>
+
+<!-- Appointment Booking Modal -->
+<div id="booking-overlay" class="fixed inset-0 z-[100] hidden items-center justify-center bg-on-surface/50 backdrop-blur-sm p-md" aria-hidden="true">
+  <div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title" class="w-full max-w-[560px] max-h-[90vh] overflow-y-auto bg-surface-container-lowest rounded-[1.5rem] shadow-2xl">
+    <div class="sticky top-0 bg-surface-container-lowest flex items-center justify-between p-lg pb-md border-b border-outline-variant/20 z-10">
+      <div>
+        <h3 id="booking-title" class="font-headline-md text-headline-md text-on-surface">Book an Appointment</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-xs">We'll confirm your slot by phone shortly.</p>
+      </div>
+      <button id="booking-close" aria-label="Close" class="w-9 h-9 shrink-0 rounded-full bg-surface-container hover:bg-surface-container-highest flex items-center justify-center transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant text-[20px]">close</span>
+      </button>
+    </div>
+
+    <form id="booking-form" class="p-lg pt-md flex flex-col gap-md" novalidate="">
+      <div>
+        <label class="font-label-md text-label-md text-on-surface-variant" for="f-name">Patient / Guardian Name *</label>
+        <input id="f-name" name="name" type="text" required="" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Anita Sharma"/>
+        <p data-error-for="name" class="hidden text-error text-xs mt-xs"></p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+        <div>
+          <label class="font-label-md text-label-md text-on-surface-variant" for="f-phone">Phone Number *</label>
+          <input id="f-phone" name="phone" type="tel" required="" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="+91 98765 43210"/>
+          <p data-error-for="phone" class="hidden text-error text-xs mt-xs"></p>
+        </div>
+        <div>
+          <label class="font-label-md text-label-md text-on-surface-variant" for="f-age">Patient Age *</label>
+          <input id="f-age" name="patientAge" type="number" min="0" max="120" required="" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. 4"/>
+          <p data-error-for="patientAge" class="hidden text-error text-xs mt-xs"></p>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-label-md text-label-md text-on-surface-variant" for="f-email">Email (optional)</label>
+        <input id="f-email" name="email" type="email" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="you@example.com"/>
+        <p data-error-for="email" class="hidden text-error text-xs mt-xs"></p>
+      </div>
+
+      <div>
+        <label class="font-label-md text-label-md text-on-surface-variant" for="f-doctor">Preferred Doctor</label>
+        <select id="f-doctor" name="doctor" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+          <option value="No preference">No preference</option>
+          <option value="Dr. Krishna Induvasi (Paediatric Surgery)">Dr. Krishna Induvasi — Paediatric Surgery</option>
+          <option value="Dr. Roshnidevi Patil (Urology)">Dr. Roshnidevi Patil — Urology</option>
+        </select>
+        <p data-error-for="doctor" class="hidden text-error text-xs mt-xs"></p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+        <div>
+          <label class="font-label-md text-label-md text-on-surface-variant" for="f-date">Preferred Date *</label>
+          <input id="f-date" name="preferredDate" type="date" required="" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"/>
+          <p data-error-for="preferredDate" class="hidden text-error text-xs mt-xs"></p>
+        </div>
+        <div>
+          <label class="font-label-md text-label-md text-on-surface-variant" for="f-time">Preferred Time *</label>
+          <select id="f-time" name="timeSlot" required="" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+            <option value="">Select a slot</option>
+            <option value="Morning (9 AM - 12 PM)">Morning (9 AM – 12 PM)</option>
+            <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM – 4 PM)</option>
+            <option value="Evening (4 PM - 8 PM)">Evening (4 PM – 8 PM)</option>
+          </select>
+          <p data-error-for="timeSlot" class="hidden text-error text-xs mt-xs"></p>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-label-md text-label-md text-on-surface-variant" for="f-message">Reason for Visit (optional)</label>
+        <textarea id="f-message" name="message" rows="3" maxlength="1000" class="mt-xs w-full bg-surface-container border border-outline-variant/40 rounded-lg px-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Briefly describe symptoms or concerns"></textarea>
+      </div>
+
+      <p id="booking-form-status" class="hidden font-body-md text-body-md rounded-lg px-md py-sm"></p>
+
+      <div class="flex items-center gap-md pt-xs">
+        <button type="submit" id="booking-submit" class="flex-1 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-lg py-sm rounded-full transition-colors flex items-center justify-center gap-2">
+          <span id="booking-submit-label">Confirm Booking Request</span>
+        </button>
+        <button type="button" id="booking-cancel" class="font-label-md text-label-md text-on-surface-variant hover:text-primary px-md py-sm">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function () {
+  const overlay = document.getElementById('booking-overlay');
+  const modal = document.getElementById('booking-modal');
+  const form = document.getElementById('booking-form');
+  const statusEl = document.getElementById('booking-form-status');
+  const submitBtn = document.getElementById('booking-submit');
+  const submitLabel = document.getElementById('booking-submit-label');
+  let lastFocused = null;
+
+  function openModal(doctor) {
+    lastFocused = document.activeElement;
+    if (doctor) form.doctor.value = doctor;
+    const dateField = form.preferredDate;
+    dateField.min = new Date().toISOString().split('T')[0];
+    overlay.classList.remove('hidden');
+    overlay.classList.add('flex');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => form.name.focus(), 0);
+  }
+
+  function closeModal() {
+    overlay.classList.add('hidden');
+    overlay.classList.remove('flex');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-open-booking]').forEach((btn) => {
+    btn.addEventListener('click', () => openModal(btn.getAttribute('data-doctor')));
+  });
+
+  document.getElementById('booking-close').addEventListener('click', closeModal);
+  document.getElementById('booking-cancel').addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !overlay.classList.contains('hidden')) closeModal();
+  });
+
+  function clearErrors() {
+    form.querySelectorAll('[data-error-for]').forEach((el) => {
+      el.classList.add('hidden');
+      el.textContent = '';
+    });
+    form.querySelectorAll('input, select, textarea').forEach((el) => el.classList.remove('!border-error'));
+  }
+
+  function showErrors(errors) {
+    Object.entries(errors).forEach(([field, msg]) => {
+      const el = form.querySelector('[data-error-for="' + field + '"]');
+      const input = form.querySelector('[name="' + field + '"]');
+      if (el) { el.textContent = msg; el.classList.remove('hidden'); }
+      if (input) input.classList.add('!border-error');
+    });
+  }
+
+  function setStatus(kind, text) {
+    statusEl.classList.remove('hidden', 'bg-error-container', 'text-on-error-container', 'bg-tertiary-container', 'text-on-tertiary-container');
+    if (kind === 'error') {
+      statusEl.classList.add('bg-error-container', 'text-on-error-container');
+    } else {
+      statusEl.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+    }
+    statusEl.textContent = text;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    clearErrors();
+    statusEl.classList.add('hidden');
+
+    const payload = {
+      name: form.name.value,
+      phone: form.phone.value,
+      email: form.email.value,
+      patientAge: form.patientAge.value,
+      doctor: form.doctor.value,
+      preferredDate: form.preferredDate.value,
+      timeSlot: form.timeSlot.value,
+      message: form.message.value,
+    };
+
+    submitBtn.disabled = true;
+    submitLabel.textContent = 'Sending…';
+
+    try {
+      const res = await fetch('/api/appointments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        if (data.errors) showErrors(data.errors);
+        setStatus('error', data.error || 'Please check the fields above and try again.');
+        return;
+      }
+
+      setStatus('success', data.message || 'Appointment request received!');
+      form.reset();
+      setTimeout(closeModal, 1800);
+    } catch (err) {
+      setStatus('error', 'Could not reach the server. Please check your connection and try again.');
+    } finally {
+      submitBtn.disabled = false;
+      submitLabel.textContent = 'Confirm Booking Request';
+    }
+  });
+})();
+</script>
+</body></html>
