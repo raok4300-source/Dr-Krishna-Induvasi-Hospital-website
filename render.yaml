@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: dr-krishna-induvasi-hospital
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: ADMIN_KEY
+        generateValue: true
+      - key: GMAIL_USER
+        sync: false
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+      - key: NOTIFY_EMAIL
+        value: raok4300@gmail.com
+    autoDeploy: true
